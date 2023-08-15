@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15pt;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: rgb(177, 176, 176);
+    user-select: none;
+    overflow: hidden;
+}
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    color: black;
+}
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 0.87rem;
+}
+h4 {
+    font-size: 0.8rem;
+}
+h5 {
+    font-size: 0.77rem;
+}
+small {
+    font-size: 0.75rem;
+}
+.ft-perfil{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.conteiner {
+    display: grid;
+    margin: 0 auto;
+    gap:1.8rem;
+    grid-template-columns: 14rem auto 0.1rem;
+    background-color: rgb(177, 176, 176);
+}
+aside {
+    height: 100vh;
+    background: rgb(226, 226, 226);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+}
+aside .topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+    margin: auto;
+}
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .close {
+    display: none;
+}
+/*===============sidebar===================*/
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top:3rem;
+}
+aside h3 {
+    font-weight: 500;
+}
+aside .sidebar a {
+    display: flex;
+    margin-left: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 100ms ease;
+}
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 1.8rem;
+    width: 94%;
+    margin-left: calc(1rem - 3px);
+    border-bottom-right-radius: 10px;
+}
+aside .sidebar a.cadastrar-funcionario{
+    background-color: rgb(230, 207, 207);
+    color:rgb(242, 24, 61);
+    margin: 0;
+}
+aside .sidebar a.cadastrar-funcionario:before{
+    content:'';
+    width:6px;
+    height:100%;
+    background:rgb(242, 24, 61);
+}
+aside .sidebar a.cadastrar-funcionario span {
+    color:rgb(242, 24, 61);
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover{
+    color: rgb(242, 24, 61);
+}
+aside .sidebar a:hover span {
+    margin-left: 0.5rem;
+}
+aside .sidebar a.logout{
+    margin-left: 0;
+    padding: calc(1rem - 3px);
+    width: 100%;
+}
+aside .sidebar a.logout:hover {
+    background: rgb(242, 24, 61);
+    color: white;
+}
+/*==================MID-SECTION====================*/
+main {
+    margin-top: 1.1rem;
+}
+.ti-central {
+    background: rgb(226, 226, 226);
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+    text-align: center;
+}
+.quadro {
+    width: 100%;
+    height: 565px;
+    overflow: hidden;
+    overflow-y: scroll; 
+    background: rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+}
+.quadro::-webkit-scrollbar{
+    border-radius: 10px;
+    width: 10px;
+}
+.quadro::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(177, 176, 176);
+}
+/*==================QUADRO-DE-CADASTRO====================*/
+.quadro-cadastro{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 20px;
+}
+.button-blue {
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    background-color: #3796c5ce;
+    border-radius: 5px;
+    transition: .2s;
+    color: white;
+}
+.button-blue:hover {
+    background-color: #00aaff;
+}
+.button-blue-cancelar{
+    border-style: none;
+    height: 30px;
+    padding: 2px 10px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    background-color: #3796c5ce;
+    border-radius: 5px;
+    transition: .2s;
+    color: white;
+}
+.button-blue-cancelar:hover{
+    background-color: #00aaff;
+}
+.button-green{
+    border-style: none;
+    height: 30px;
+    padding: 2px 10px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    background-color: #13ce66;
+    border-radius: 5px;
+    transition: .2s;
+    color: white;
+}
+.button-green:hover {
+    background-color: #1aec79;
+}
+.button-red {
+    border-style: none;
+    height: 30px;
+    padding: 2px 10px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s;
+    background-color: rgba(209, 55, 80, 0.897);
+    color: white;
+}
+.button-red:hover{
+    background-color: rgb(248, 6, 46);
+}
+/*==================QUADRO DE INFORMAÇÕES==================*/
+.quadro-info{
+    width: 100%;
+    user-select: none;
+    text-align: left; 
+}
+/*.quadro-info th{
+    height: 40px;
+    background-color: rgb(177, 176, 176);
+    padding-left: 10px;
+
+}
+/*.quadro-info td{
+    height: 35px;
+    padding-left: 10px;
+}
+.quadro-info th:last-child,
+.quadro-info td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+/*===================TELA-DE-REGISTRO===============*/
+.quadro-registro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+    ;
+}
+.DeletePage {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+.active{
+    opacity: 1;
+    z-index: 1;
+    transition: 0.3s;
+    display: block;
+}
+.header-registro{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top-right-radius: 10px;
+}
+.header-registro>h2 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(177, 176, 176);
+    border-top-left-radius: 10px;
+}
+.icone-close{
+    display: block;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(177, 176, 176);
+    border-top-right-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.icone-close:hover{
+    background-color: rgb(242, 24, 61);
+    color: white;
+}
+.conteiner-registro{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40vw;
+    margin: 25vh auto;
+    background: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.footer-conteiner {
+    margin-right: 10px;
+    text-align: right;
+}
+.campo-registro {
+    margin-left: 10px;
+    background-color: white;
+    border-style: none;
+    height: 30px;
+    padding: 2px 10px;
+    font-size: 0.88rem;
+    margin: 2px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+.campo-registro:focus {
+    border: 2px solid rgb(49, 49, 49);
+}
+summary {
+    background-color: rgba(177, 176, 176, 0.219);
+    padding-left: 10px;
+    margin-top: 3px;
+    width: 36vw;
+    border-radius: 5px;
+    
+}
+summary:hover{
+    width: 36vw;
+    background-color: rgba(177, 176, 176, 0.541);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.summary-active {
+    background-color: rgb(177, 176, 176);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: center;
+}
+details {
+    width: 36vw;
+    border-radius: 5px;
+    background-color: rgba(177, 176, 176, 0.219);
+     
+}
+p {
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.button_editDelete {
+    text-align: right;
+}
+.quadro-fixo {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(177, 176, 176);
+    padding: 10px;
+    border:  10px solid rgb(226, 226, 226);
+}
+.ti-fixo {
+    text-align: justify;
+}
+.searchBox {
+    background: rgb(226, 226, 226);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.searchTxt {
+    margin-left: 10px;
+    background: rgb(226, 226, 226);
+    width: 90%;
+}
+
+
+

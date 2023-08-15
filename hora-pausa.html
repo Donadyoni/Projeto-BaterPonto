@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--material-CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!--estilo-do-site-->
+    <link rel="stylesheet" href="hora-pausa.css">
+    <title>Pausas</title>
+</head>
+<body>
+    <div class="conteiner">
+        <aside>
+            <div class="topo">
+                <div class="logo">
+                    <img src="/Projeto-BaterPonto/img-projeto/dd.png">
+                    <h2>Menu</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="dashboard.html" class="active">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h3>Painel central</h3>
+                </a>
+                <a href="hora-pausa.html" class="pausa">
+                    <span class="material-symbols-sharp">pending_actions</span>
+                    <h3>Minhas pausas</h3>
+                </a>
+                <a href="reajuste-pausa.html">
+                    <span class="material-symbols-sharp">edit_square</span>
+                    <h3>Reajustar pausa</h3>
+                </a>
+                <a href="cadastrar-funcionario.html" class="cadastrar-funcionario">
+                    <span class="material-symbols-sharp">person_add</span>
+                    <h3>Cadastrar funcionário</h3>
+                </a>
+                <a href="#" class="logout">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h2 class="ti-central">Minhas pausas</h1>
+            <div class="quadro">
+                <div class="foto-grande">
+                    <img src="/Projeto-BaterPonto/img-projeto/profile-foto.jpg">
+                    <h4>Donadyoni Vieira Rodrigues</h4>
+                    <div class="hr-pausa">Selecione sua pausa:
+                        <select name="tEst" id="cEst">
+                                <option value="Descompressao" selected>Descompressão</option>
+                                <option value="Lanche">Lanche</option>
+                                <option value="Almoço">Almoço</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Toalet">Toalet</option>   
+                        </select>
+                    </div>
+                </div>
+                <div class="rigth-bar-main">
+                    <p><button onclick="iniciarPausa()" id="botaopausa">Bater ponto</button></p>
+                    <p>fdsfsdfsd</p>
+                    <p>fdsfsdfsd</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

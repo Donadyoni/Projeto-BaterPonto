@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15pt;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: rgb(177, 176, 176);
+    user-select: none;
+    overflow: hidden;
+}
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    color: black;
+}
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 0.87rem;
+}
+h4 {
+    font-size: 0.8rem;
+}
+h5 {
+    font-size: 0.77rem;
+}
+small {
+    font-size: 0.75rem;
+}
+.ft-perfil{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.conteiner {
+    display: grid;
+    margin: 0 auto;
+    gap:1.8rem;
+    grid-template-columns: 14rem auto 0.1rem;
+    background-color: rgb(177, 176, 176);
+}
+aside {
+    height: 100vh;
+    background: rgb(226, 226, 226);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+}
+aside .topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+    margin: auto;
+}
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .close {
+    display: none;
+}
+/*===============sidebar===================*/
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top:3rem;
+}
+aside h3 {
+    font-weight: 500;
+}
+aside .sidebar a {
+    display: flex;
+    margin-left: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 100ms ease;
+}
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 1.8rem;
+    width: 94%;
+    margin-left: calc(1rem - 3px);
+    border-bottom-right-radius: 10px;
+}
+aside .sidebar a.pausa{
+    background-color: rgb(230, 207, 207);
+    color:rgb(242, 24, 61);
+    margin: 0;
+}
+aside .sidebar a.pausa:before{
+    content:'';
+    width:6px;
+    height:100%;
+    background:rgb(242, 24, 61);
+}
+aside .sidebar a.pausa span {
+    color:rgb(242, 24, 61);
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover{
+    color: rgb(242, 24, 61);
+}
+aside .sidebar a:hover span {
+    margin-left: 0.5rem;
+}
+aside .sidebar a.logout{
+    margin-left: 0;
+    padding: calc(1rem - 3px);
+    width: 100%;
+}
+aside .sidebar a.logout:hover {
+    background: rgb(242, 24, 61);
+    color: white;
+}
+/*==================MID-SECTION====================*/
+main {
+    margin-top: 1.1rem;
+}
+.ti-central {
+    background: rgb(226, 226, 226);
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+    text-align: center;
+}
+.quadro {
+    width: 100%;
+    height: 565px;
+    background: rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.26);
+}
+.foto-grande img {
+    width: 13rem;
+    height: 12rem;
+    padding: 10px;
+    border-radius: 50%;
+    margin:auto;
+    display: block;
+}
+.rigth-bar-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 150px;
+}
+h4 {
+    text-align: center;
+}
+.hr-pausa{
+    margin-top: 20px;
+    padding: 0px;
+    grid-gap: 1px;
+    display: block;
+    text-align: center;
+}
+#cEst {
+    background-color: rgb(177, 176, 176);
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+#botaopausa {
+    background-color: rgb(177, 176, 176);
+    padding: 10px;
+    font-size: 23px;
+    border-radius: 10px;
+}
+#botaopausa:hover {
+    background: rgb(189, 189, 189);
+    cursor: pointer;
+}
+#botaopausa:active {
+    background: rgb(207, 207, 207);
+    cursor: pointer;
+}

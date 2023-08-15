@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--material-CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!--estilo-do-site-->
+    <link rel="stylesheet" href="cadastrar-funcionario.css">
+    <script src="cadastrar-funcionario.js" defer></script>
+    <script src="login.js"></script>
+    <title>Cadastrar funcionário</title>
+</head>
+<body>
+    <div class="conteiner">
+        <aside>
+            <div class="topo">
+                <div class="logo">
+                    <img src="/Projeto-BaterPonto/img-projeto/dd.png">
+                    <h2>Menu</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="dashboard.html" class="active">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h3>Painel central</h3>
+                </a>
+                <a href="hora-pausa.html" class="pausa">
+                    <span class="material-symbols-sharp">pending_actions</span>
+                    <h3>Minhas pausas</h3>
+                </a>
+                <a href="reajuste-pausa.html" class="reajuste-pausa">
+                    <span class="material-symbols-sharp">edit_square</span>
+                    <h3>Reajustar pausas</h3>
+                </a>
+                <a href="cadastrar-funcionario.html" class="cadastrar-funcionario">
+                    <span class="material-symbols-sharp">person_add</span>
+                    <h3>Cadastrar funcionário</h3>
+                </a>
+                <a href="#" class="logout" id="logout">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!--fim da barra lateral esquerda-->
+        <main>
+            <h2 class="ti-central">Cadastrar funcionário</h2>
+            
+            <div class="quadro">
+                
+                <div class="quadro-fixo">
+                    <button type="button" class="button-blue" id="CadastrarFuncionario">Cadastrar funcionário</button>
+                    <p><strong>Funcionarios Cadastrados</strong></p>
+                    <nav class="ti-fixo">
+                        <div class="searchBox">
+                            <input class="searchTxt" type="text" placeholder="Buscar pelo nome">
+                        </div>
+                    </nav>
+                </div>
+                <div class="quadro-cadastro">
+                <table id="tableClient" class="quadro-info">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>  
+                    </div>
+                    </thead>
+                    <tbody>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="quadro-registro" id="QuadroRegistro">
+                    <div class="conteiner-registro">
+                        <header class="header-registro">
+                            <h2>Informações do funcionário</h2>
+                            <span class="icone-close" id="IconeClose">&#10006;</span>
+                        </header>
+                        <form id="form">
+                            <input type="text" id="nome" data-index="new" class="campo-registro" placeholder="Nome" required>
+                            <input type="email" id="email" class="campo-registro" placeholder="E-mail" required>
+                            <input type="tel" id="telefone" class="campo-registro" placeholder="Telefone" required>
+                            <input type="tel" id="telefoneRec" class="campo-registro" placeholder="Telefone p/ recado" required>
+                            <input type="text" id="cidade" class="campo-registro" placeholder="Cidade" required>
+                            <input type="password" id="password" class="campo-registro" placeholder="senha">
+                        </form>
+                        <footer class="footer-conteiner">
+                            <button type="button" id="Salvar" class="button-green">Salvar</button>
+                            <button type="button" id="Cancelar" class="button-blue-cancelar">Cancelar</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="DeletePage" id="DeletePage">
+        <header class="header-registro">
+            <h2>Realmente deseja excluir este cadastro?</h2>
+            <span class="icone-close" id="IconeClose">&#10006;</span>
+        </header>
+        <button type="button" class="button-red" id="delete">Excluir</button>
+        <button type="button" id="Cancelar" class="button-blue-cancelar">Cancelar</button>
+    </div>
+</body>
+</html>
